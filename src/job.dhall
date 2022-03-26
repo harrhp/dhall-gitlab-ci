@@ -34,8 +34,8 @@ let Job =
       , services : Optional (List Service.Type)
       , trigger : Optional Trigger.Type
       , when : Optional Rule.When
-      , after_script : Optional Text
-      , before_script : Optional Text
+      , after_script : Optional (List Text)
+      , before_script : Optional (List Text)
       , allow_failure : Optional AllowFailure.Variants
       , tags : Optional (List Text)
       , timeout : Optional Text
@@ -59,8 +59,8 @@ in  { Type = Job
       , script = None (List Text)
       , trigger = None Trigger.Type
       , when = None Rule.When
-      , after_script = None Text
-      , before_script = None Text
+      , after_script = None (List Text)
+      , before_script = None (List Text)
       , allow_failure = None AllowFailure.Variants
       , tags = None (List Text)
       , timeout = None Text

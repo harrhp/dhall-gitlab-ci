@@ -13,7 +13,7 @@ let Ci =
       , jobs : Prelude.Map.Type Text Job.Type
       , stages : Optional (List Text)
       , variables : Optional (Prelude.Map.Type Text Variable.Type)
-      , include : Optional Include.Variants
+      , include : Optional (List Include.Variants)
       }
 
 let CiVariants =
@@ -28,7 +28,7 @@ in  { Type = Ci
       { workflow = None Workflow.Type
       , stages = None (List Text)
       , variables = None (Prelude.Map.Type Text Variable.Type)
-      , include = None Include.Variants
+      , include = None (List Include.Variants)
       }
     , Job
     , Workflow
