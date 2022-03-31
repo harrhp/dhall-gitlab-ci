@@ -1,8 +1,8 @@
 let When = < on_success | on_failure | always >
 
 let Reports =
-      { Type = { dotenv : Optional Text, junit : Optional Text }
-      , default = { dotenv = None Text, junit = None Text }
+      { Type = { dotenv : Optional (List Text), junit : Optional (List Text) }
+      , default = { dotenv = None (List Text), junit = None (List Text) }
       }
 
 let Artifacts =
