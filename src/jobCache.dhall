@@ -26,4 +26,5 @@ in  { Type = Cache
       , policy = None Policy
       }
     , Key
+    , When
     }

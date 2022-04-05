@@ -30,4 +30,5 @@ in  { Type = Artifacts
       , when = None When
       }
     , Reports
+    , When
     }
