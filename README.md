@@ -1,4 +1,4 @@
-# Dhall schema for gitlab-ci.yaml
+# Dhall schema for gitlab-ci.yml
 
 ## Installation
 ```dhall
